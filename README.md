@@ -1,4 +1,16 @@
+typescript不会对别名进行处理
+在捣鼓了很久确定我的tsconfig配置没有问题后，我无奈又进行了百度，发现typescript根本不会对别名进行处理，只能借助第三方编译工具，例如babel，webpack。
+//^0.1.1
+大悲
+
+    "allowJs": true,
+//
+大悲
+"dependencies"：您的应用程序在生产中所需的包。
+"devDependencies"：仅用于本地开发和测试的包。
+npm install ./utils
 <p align='center'>
+
   <img src='./screenshots/logo.svg' width='400'/>
 </p>
 
