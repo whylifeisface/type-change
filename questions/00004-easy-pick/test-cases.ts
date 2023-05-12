@@ -21,3 +21,5 @@ interface Expected2 {
   title: string
   completed: boolean
 }
+// 返回对象
+// 给对象赋值 如果对象有这格属性

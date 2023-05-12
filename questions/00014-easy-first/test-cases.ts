@@ -7,9 +7,14 @@ type cases = [
   Expect<Equal<First<[undefined]>, undefined>>,
 ]
 
+type s = First<[]>;
+
 type errors = [
   // @ts-expect-error
   First<'notArray'>,
   // @ts-expect-error
   First<{ 0: 'arrayLike' }>,
 ]
+// function fisrst( one ){
+//   return one[0];
+// }

@@ -12,3 +12,6 @@ interface Todo1 {
     author: string
   }
 }
+type s = MyReadonly<Todo1>
+// 返回对象
+// 对对象赋值 
