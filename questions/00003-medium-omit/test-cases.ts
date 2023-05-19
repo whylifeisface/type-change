@@ -5,6 +5,7 @@ type cases = [
   Expect<Equal<Expected2, MyOmit<Todo, 'description' | 'completed'>>>,
 ]
 
+
 // @ts-expect-error
 type error = MyOmit<Todo, 'description' | 'invalid'>
 
@@ -22,3 +23,14 @@ interface Expected1 {
 interface Expected2 {
   title: string
 }
+//返回一个对象
+
+// function(A,B){
+//   A.filters((elemnetA)=>{
+//     B.array.forEach(elementB => {
+//     B.array.forEach(elementB => {
+//       elemnetA == 
+//     });
+     
+//   })
+// }
