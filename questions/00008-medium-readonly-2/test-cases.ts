@@ -10,6 +10,7 @@ type cases = [
 // @ts-expect-error
 type error = MyReadonly2<Todo1, 'title' | 'invalid'>
 
+type A  = MyReadonly2<Todo1>
 interface Todo1 {
   title: string
   description?: string

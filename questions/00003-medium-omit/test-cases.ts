@@ -1,9 +1,9 @@
 import type { Equal, Expect } from '@type-challenges/utils'
-
 type cases = [
   Expect<Equal<Expected1, MyOmit<Todo, 'description'>>>,
   Expect<Equal<Expected2, MyOmit<Todo, 'description' | 'completed'>>>,
 ]
+
 
 
 // @ts-expect-error
@@ -15,6 +15,8 @@ interface Todo {
   completed: boolean
 }
 
+type A = MyOmit<Todo, 'description'>
+
 interface Expected1 {
   title: string
   completed: boolean
@@ -23,6 +25,8 @@ interface Expected1 {
 interface Expected2 {
   title: string
 }
+
+
 //返回一个对象
 
 // function(A,B){

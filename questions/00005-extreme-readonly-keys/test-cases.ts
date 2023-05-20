@@ -16,3 +16,10 @@ interface Todo2 {
   readonly description: string
   completed?: boolean
 }
+type A = {
+  [K in keyof Todo2 ]  : K
+}
+type In<T> = {
+  [P in keyof T as P extends T[P] ? P :never ]: P
+}
+type B = In<A>
